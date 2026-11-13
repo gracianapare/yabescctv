@@ -1,0 +1,24 @@
+.contact {
+  padding-block: clamp(56px, 8vw, 96px);
+  background: var(--red);
+  color: #fff;
+}
+
+.contact-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px 48px;
+}
+
+.contact h2 {
+  max-width: 16ch;
+  font-size: clamp(2rem, 1.2rem + 3vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.contact :focus-visible {
+  outline-color: #fff;
+}

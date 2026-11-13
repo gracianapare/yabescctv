@@ -1,0 +1,52 @@
+.testimonials {
+  padding-block: var(--section-y);
+  background: var(--paper-2);
+}
+
+.testimonials .section-title {
+  max-width: 20ch;
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 56px clamp(32px, 6vw, 96px);
+  margin-top: 56px;
+}
+
+.quote {
+  padding-left: 24px;
+  border-left: 3px solid var(--ink);
+}
+
+.quote--lead {
+  grid-column: 1 / -1;
+  border-left-color: var(--red);
+}
+
+.quote blockquote p {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.quote--lead blockquote p {
+  max-width: 36ch;
+  font-size: clamp(1.5rem, 1rem + 2vw, 2.25rem);
+  line-height: 1.25;
+}
+
+.quote-who {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+@media (max-width: 720px) {
+  .quote-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

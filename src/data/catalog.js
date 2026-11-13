@@ -1,0 +1,132 @@
+// Daftar jenis perangkat contoh. Ganti dengan katalog asli Yabes CCTV.
+// Sengaja tanpa harga dan merek: harga ditanyakan lewat WhatsApp.
+
+export const CATEGORIES = [
+  { id: "all", label: "Semua" },
+  { id: "kamera", label: "Kamera" },
+  { id: "rekaman", label: "Rekaman dan penyimpanan" },
+  { id: "jaringan", label: "Jaringan dan daya" },
+  { id: "aksesori", label: "Aksesori" },
+];
+
+export const CATALOG = [
+  {
+    id: "kamera-dome",
+    category: "kamera",
+    name: "Kamera dome indoor",
+    description: "Bentuk kubah yang rapi untuk ruang tamu, toko, kantor, dan koridor.",
+    keywords: ["dalam ruangan", "indoor", "dome"],
+  },
+  {
+    id: "kamera-bullet",
+    category: "kamera",
+    name: "Kamera bullet outdoor",
+    description: "Untuk halaman, gerbang, dan sisi bangunan yang terkena cuaca.",
+    keywords: ["luar ruangan", "outdoor", "bullet", "tahan air"],
+  },
+  {
+    id: "kamera-ptz",
+    category: "kamera",
+    name: "Kamera PTZ",
+    description: "Bisa diputar dan di-zoom untuk area luas seperti parkiran dan gudang.",
+    keywords: ["putar", "zoom", "ptz", "area luas"],
+  },
+  {
+    id: "kamera-wifi",
+    category: "kamera",
+    name: "Kamera nirkabel (Wi-Fi)",
+    description: "Pemasangan lebih ringkas untuk lokasi yang sulit ditarik kabel jaringan.",
+    keywords: ["wifi", "wireless", "tanpa kabel"],
+  },
+  {
+    id: "kamera-malam",
+    category: "kamera",
+    name: "Kamera mode malam",
+    description: "Dilengkapi lampu inframerah agar area tetap terpantau saat gelap.",
+    keywords: ["night vision", "inframerah", "infrared", "gelap"],
+  },
+  {
+    id: "kamera-audio",
+    category: "kamera",
+    name: "Kamera dengan mikrofon",
+    description: "Merekam suara di sekitar kamera, sesuai kebutuhan lokasi Anda.",
+    keywords: ["audio", "suara", "mikrofon"],
+  },
+  {
+    id: "dvr",
+    category: "rekaman",
+    name: "DVR",
+    description: "Perekam untuk sistem kamera analog dan kamera berkabel koaksial.",
+    keywords: ["dvr", "perekam", "analog", "recorder"],
+  },
+  {
+    id: "nvr",
+    category: "rekaman",
+    name: "NVR",
+    description: "Perekam untuk kamera jaringan (IP) dengan sambungan kabel LAN.",
+    keywords: ["nvr", "perekam", "ip camera", "recorder"],
+  },
+  {
+    id: "harddisk",
+    category: "rekaman",
+    name: "Hard disk untuk perekaman",
+    description: "Penyimpanan rekaman yang dirancang untuk menyala terus-menerus.",
+    keywords: ["hdd", "hard disk", "harddisk", "penyimpanan", "storage"],
+  },
+  {
+    id: "monitor",
+    category: "rekaman",
+    name: "Monitor tampilan",
+    description: "Layar untuk melihat semua kamera sekaligus di toko atau kantor.",
+    keywords: ["layar", "monitor", "display"],
+  },
+  {
+    id: "switch-poe",
+    category: "jaringan",
+    name: "Switch PoE",
+    description: "Mengalirkan data dan daya lewat satu kabel LAN ke kamera jaringan.",
+    keywords: ["poe", "switch", "power over ethernet"],
+  },
+  {
+    id: "router",
+    category: "jaringan",
+    name: "Router dan access point",
+    description: "Menjaga koneksi kamera dan akses dari ponsel tetap stabil.",
+    keywords: ["router", "wifi", "access point", "jaringan", "internet"],
+  },
+  {
+    id: "adaptor",
+    category: "jaringan",
+    name: "Adaptor dan power supply",
+    description: "Catu daya untuk kamera yang tidak memakai PoE.",
+    keywords: ["adaptor", "power supply", "listrik", "catu daya"],
+  },
+  {
+    id: "ups",
+    category: "jaringan",
+    name: "UPS",
+    description: "Cadangan listrik agar rekaman tidak terputus saat listrik padam sebentar.",
+    keywords: ["ups", "cadangan listrik", "baterai", "listrik padam"],
+  },
+  {
+    id: "kabel",
+    category: "aksesori",
+    name: "Kabel koaksial dan LAN",
+    description: "Jalur video dan data dari kamera ke perekam.",
+    keywords: ["kabel", "coaxial", "lan", "utp", "rg59"],
+  },
+  {
+    id: "konektor",
+    category: "aksesori",
+    name: "Konektor dan box sambungan",
+    description: "BNC, konektor daya, dan box pelindung untuk sambungan di luar ruangan.",
+    keywords: ["bnc", "konektor", "box", "sambungan", "junction"],
+  },
+  {
+    id: "bracket",
+    category: "aksesori",
+    name: "Bracket dan pelindung kamera",
+    description: "Dudukan dan penutup agar kamera terpasang kuat dan terlindung.",
+    keywords: ["bracket", "dudukan", "pelindung", "casing", "housing"],
+  },
+];

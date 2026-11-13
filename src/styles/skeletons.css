@@ -1,0 +1,104 @@
+/* Skeleton: blok abu-abu yang berkilau pelan sampai konten asli siap. */
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-s);
+  background: var(--paper-2);
+}
+
+.skeleton::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 60%), transparent);
+  content: "";
+  transform: translateX(-100%);
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Katalog */
+.sk-label {
+  width: 110px;
+  height: 18px;
+  margin-bottom: 8px;
+}
+
+.sk-input {
+  height: 52px;
+}
+
+.sk-chip {
+  width: 92px;
+  height: 40px;
+}
+
+.sk-status {
+  height: 1.5em;
+}
+
+.sk-line {
+  height: 16px;
+}
+
+.sk-line--name {
+  width: 70%;
+  height: 20px;
+}
+
+.sk-line--cat {
+  width: 45%;
+  margin-top: 8px;
+  height: 14px;
+}
+
+.sk-line--desc {
+  width: 90%;
+}
+
+.sk-line--action {
+  width: 96px;
+}
+
+/* Testimoni */
+.band-skeleton {
+  padding-block: var(--section-y);
+  background: var(--paper-2);
+  min-height: clamp(640px, 70vw, 800px);
+}
+
+.band-skeleton .skeleton {
+  background: #dde2ea;
+}
+
+.sk-band-title {
+  width: min(480px, 100%);
+  height: 56px;
+  margin-bottom: 56px;
+}
+
+.sk-band-quote {
+  width: min(640px, 100%);
+  height: 140px;
+  margin-bottom: 48px;
+}
+
+.sk-band-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.sk-band-small {
+  height: 110px;
+}
+
+@media (max-width: 640px) {
+  .sk-band-row {
+    grid-template-columns: 1fr;
+  }
+}
